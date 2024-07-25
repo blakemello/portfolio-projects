@@ -1,9 +1,5 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+import { useContext, useState } from 'react'
 import './App.css'
-import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom'
-import { ThemeContext, ThemeContextProvider } from './ThemeContext'
 import Home from './components/Home'
 import Events from './components/Events'
 import StoreMain from './components/StoreMain'
@@ -11,13 +7,16 @@ import TrainingMain from './components/TrainingMain'
 import AboutUs from './components/AboutUs'
 import LetsTalkScuba from './components/LetsTalkScuba'
 import ContactUs from './components/ContactUs'
+import { ThemeContext } from './context/ThemeContext'
+import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom'
+import GalleryDivingMemories from './components/GalleryDivingMemories'
 
 function App() {
-  const [count, setCount] = useState(0)
+
+  // const { toggleTheme } = useContext(ThemeContext)
 
   return (
-  <ThemeContextProvider>
-    <Router>
+    <>
       <nav>
         <Link to="/" style={{padding: 5}}> 
           Home
@@ -50,9 +49,9 @@ function App() {
         <Route path='/about-us' element={<AboutUs />}/>
         <Route path='/lets-talk-scuba' element={<LetsTalkScuba />}/>
         <Route path='/contact-us' element={<ContactUs />}/>
+        <Route path='/gallery-diving-memories' element={<GalleryDivingMemories />}/>
       </Routes>
-    </Router>
-  </ThemeContextProvider>
+    </>
   )
 }
 
