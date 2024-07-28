@@ -6,6 +6,8 @@ export default function TrainingRescue(){
         <div className='training-page'>
             <h2>RESCUE DIVER CERTIFICATION</h2>
             <OtherCourses />
+            <img src='../src/assets/rec-Military-Trusted-Business-Badge.png' />
+            <OtherCourses />
         </div>
     )
 }

@@ -13,7 +13,6 @@ import GalleryDivingMemories from './components/GalleryDivingMemories'
 import StoreRentals from './components/StoreRentals'
 import StoreRepairsMaintenance from './components/StoreRepairsMaintenance'
 import WeRecommend from './components/WeRecommend'
-import TrainingBasic from './components/TrainingBasic'
 import TrainingRefresher from './components/TrainingRefresher'
 import TrainingAdvanced from './components/TrainingAdvanced'
 import TrainingRescue from './components/TrainingRescue'
@@ -38,7 +37,7 @@ function App() {
           </div>
         </div>
         <div className="dropdown">
-          <button className="dropbtn"><a href='/events-travel-dives'>Store & Rentals ⇩</a></button>
+          <button className="dropbtn"><a href='/aloha-store'>Store & Rentals ⇩</a></button>
           <div className="dropdown-content">
             <a href='/aloha-store/rentals'>Rentals</a>
             <a href='/aloha-store/repairs-maintenance'>Repairs & Maintenance</a>
@@ -78,7 +77,6 @@ function App() {
         <Route path='/aloha-store/repairs-maintenance' element={<StoreRepairsMaintenance />}/>
         <Route path='/we-recommend' element={<WeRecommend />}/>
         <Route path='/scuba-classes-basic-open-water-certification' element={<TrainingMain />}/>
-        <Route path='/scuba-classes-basic-open-water-certification/#basic' element={<TrainingBasic />}/>
         <Route path='/scuba-classes-basic-open-water-certification/refresher-course' element={<TrainingRefresher />}/>
         <Route path='/scuba-classes-basic-open-water-certification/advanced-open-water-certification' element={<TrainingAdvanced />}/>
         <Route path='/scuba-classes-basic-open-water-certification/rescue-diver-certification' element={<TrainingRescue />}/>
