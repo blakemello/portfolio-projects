@@ -27,6 +27,7 @@ function App() {
 
   return (
     <>
+    <div>
         <Link to="/" style={{padding: 5}}> 
           Home
         </Link>
@@ -66,7 +67,7 @@ function App() {
         <Link to='/contact-us' style={{padding: 5}}>
           Contact Us
         </Link>
-        
+        </div>
 
       <Routes>
         <Route path='/' element={<Home />}/>

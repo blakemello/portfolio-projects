@@ -41,8 +41,18 @@ nav {
   overflow: hidden;
 }
 
-form {
-  
+ul {
+  text-align: left;
+}
+
+input {
+  color: #1a1a1a;
+  background-color: #f1f1f1;
+}
+
+textarea {
+  color: #1a1a1a;
+  background-color: #f1f1f1;
 }
 
 nav a {

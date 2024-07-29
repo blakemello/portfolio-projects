@@ -36,7 +36,6 @@ export default function ContactUs(){
             <br></br>
             <form>
                 <p style={{color: 'red'}}><b style={{color: 'black'}}>Name</b> *</p>
-                <br></br>
                 <input 
                     type='text'
                     placeholder='First Name'
@@ -53,7 +52,6 @@ export default function ContactUs(){
                 />
                 <br></br>
                 <p style={{color: 'red'}}><b style={{color: 'black'}}>Email</b> *</p>
-                <br></br>
                 <input 
                     type='text'
                     placeholder='Email'
@@ -62,8 +60,7 @@ export default function ContactUs(){
                     onChange={handleChange}
                 />
                 <br></br>
-                <b>Comment or Message</b>
-                <br></br>
+                <p><b>Comment or Message</b></p>
                 <textarea 
                     type='text'
                     name='comment'
